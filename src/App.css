@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+button {
+  font-family: "Courgette", cursive;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  display: grid;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+}
+
+nav img {
+  width: 20%;
+  margin: 1rem auto;
+}
+
+nav a {
+  margin-right: 40px;
+  text-decoration: none;
+  color: grey;
+  background: whitesmoke;
+  padding: 0.2rem;
+  width: 90vw;
+  border-bottom: 1px solid lightgrey;
+}
+
+.list {
+  width: 90%;
+  margin: 0.3rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.search {
+  background: whitesmoke;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  margin: 1.1rem auto;
+  justify-content: center;
+  justify-items: center;
+  width: 90%;
+}
+
+.search input,
+button {
+  border: 1px solid lightgrey;
+  font-size: 1.2rem;
+  color: grey;
+  letter-spacing: 1px;
+  text-align: center;
+  outline: none;
+  padding: 0.2rem;
+}
+
+.search input::placeholder {
+  color: lightgrey;
+}
+
+.pokemon {
+  margin: 1rem auto;
+}
+
+.pokemon h1 {
+  text-align: center;
+  margin: 1.5rem auto;
+  color: lightgrey;
+  background: whitesmoke;
+  padding-bottom: 0.2rem;
+  width: 90%;
+}
+
+.item h2 {
+  margin: 0.5rem auto;
+  color: grey;
+}
+
+.item img {
+  width: 20%;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+
+.item img:hover {
+  transform: scale(1.3);
+}
+
+.pokemon-wrapper {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  text-align: center;
+  width: 90%;
+}
+
+.loading {
+  display: flex;
+  place-content: center;
+  margin: 2rem auto;
+}
+
+.loading img {
+  width: 20%;
+  border-radius: 15px;
+}
+
+.error {
+  text-align: center;
+  font-size: 2.5rem;
+  color: lightgrey;
+  margin: 5rem auto;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  list-style-type: none;
+  background: whitesmoke;
+  width: 90%;
+  margin: 1.4rem auto;
+  padding: 0.2rem;
+  color: grey;
+}
+
+.pagination a {
+  background: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.pagination a:hover {
+  border: 1px solid lightgrey;
+  padding: 0 0.3rem;
+}
