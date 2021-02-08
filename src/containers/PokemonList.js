@@ -10,7 +10,7 @@ import { getPokemonList } from "../actions/pokemonActions";
 
 import Loading from "../components/loading/Loading";
 
-import ReatPaginate from "react-paginate";
+import ReactPaginate from "react-paginate";
 
 const PokemonList = (props) => {
   const [search, setSearch] = useState("");
@@ -65,13 +65,13 @@ const PokemonList = (props) => {
       </div>
       {showData()}
       {!_.isEmpty(pokemonList.data) && (
-        <ReatPaginate
+        <ReactPaginate
           pageCount={Math.ceil(pokemonList.count / 15)}
           pageRangeDisplayed={2}
           marginPagesDisplayed={1}
           onPageChange={(data) => fetchData(data.selected + 1)}
           containerClassName="pagination"
-        ></ReatPaginate>
+        ></ReactPaginate>
       )}
     </div>
   );
